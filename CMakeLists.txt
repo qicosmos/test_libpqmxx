@@ -10,7 +10,7 @@ SET(SOURCE_FILES
         main.cpp
         )
 
-add_library(${PROJECT_NAME} ${SOURCE_FILES})
+add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 INCLUDE_DIRECTORIES("${PG_BASE}/include/postgresql"
 					"../libpqmxx/include"
                    )
