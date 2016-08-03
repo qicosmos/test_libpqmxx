@@ -15,6 +15,6 @@ INCLUDE_DIRECTORIES("${PG_BASE}/include/postgresql"
 					"../libpqmxx/include"
                    )
 LINK_DIRECTORIES("${PG_BASE}/lib/postgresql"
-				 "../libpqmxx/lib"
+				 "/home/skyinno/libpqmxx/lib"
 				)
 TARGET_LINK_LIBRARIES(${PROJECT_NAME} "libpqmxx.a" "${PG_BASE}/lib/libpq.so")
