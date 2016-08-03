@@ -15,4 +15,4 @@ INCLUDE_DIRECTORIES("${PG_BASE}/include/postgresql"
 					"../libpqmxx/include"
                    )
 LINK_DIRECTORIES("${PG_BASE}/lib/postgresql")
-TARGET_LINK_LIBRARIES(${PROJECT_NAME} "../libpqmxx/lib.libpqmxx.a" "${PG_BASE}/lib/libpq.so")
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} "../libpqmxx/lib/libpqmxx.a" "${PG_BASE}/lib/libpq.so")
