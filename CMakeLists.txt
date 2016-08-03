@@ -14,5 +14,7 @@ add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 INCLUDE_DIRECTORIES("${PG_BASE}/include/postgresql"
 					"../libpqmxx/include"
                    )
-LINK_DIRECTORIES("${PG_BASE}/lib/postgresql")
-TARGET_LINK_LIBRARIES(${PROJECT_NAME} "../libpqmxx/lib/libpqmxx.a" "${PG_BASE}/lib/libpq.so")
+LINK_DIRECTORIES("${PG_BASE}/lib/postgresql"
+				 "../libpqmxx/lib"
+				)
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} "libpqmxx.a" "${PG_BASE}/lib/libpq.so")
