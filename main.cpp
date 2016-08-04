@@ -69,7 +69,7 @@ int main() {
 			    )SQL");
 
 		for (auto &row : oldest) {
-			std::cout << "- " << row.get<std::string>(0) << " " << row.get<std::string>(1)
+			std::cout << "- " << row.get<std::string>(0) << " " << row.get<std::string>(1)<<", "<<row.get<std::string>("first_name")
 				<< ", " << row.get<double>(2) << " years old." << std::endl;
 		}
 
